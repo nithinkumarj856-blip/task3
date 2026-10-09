@@ -1,0 +1,107 @@
+/* ===========================================
+   Step 3: Body background color
+   =========================================== */
+body {
+  background-color: coral;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 30px;
+}
+
+/* ===========================================
+   Step 5: Class selector — dark blue text for
+   every element with class="head"
+   =========================================== */
+.head {
+  color: darkblue;
+}
+
+/* ===========================================
+   Step 6: Id selector — background for the
+   2nd heading (h2#bglime) only
+   =========================================== */
+#bglime {
+  background-color: lime;
+  padding: 6px 10px;
+}
+
+/* ===========================================
+   Step 7: Descendant selector — the word
+   "head" wrapped in a <span> inside #bglime
+   turns red (overrides .head's dark blue
+   because an id-based descendant selector
+   is more specific than a class selector)
+   =========================================== */
+#bglime span {
+  color: red;
+}
+
+/* ===========================================
+   Step 8: Element selector — plain paragraphs
+   (no id/class) get white text
+   =========================================== */
+p {
+  color: white;
+  font-size: 16px;
+}
+
+/* ===========================================
+   Step 9: Id selector — 2nd paragraph (#para)
+   overrides the element rule above to green
+   =========================================== */
+#para {
+  color: green;
+}
+
+/* ===========================================
+   Step 10: Descendant selector — the word
+   "paragraph" wrapped in a <span> inside
+   #para turns black and gets a bigger font
+   (overrides #para's green because the
+   descendant selector is more specific)
+   =========================================== */
+#para span {
+  color: black;
+  font-size: 20px;
+}
+
+/* ===========================================
+   Step 11: Lists — styled without inline CSS
+   and without any id/class on the <a> tags,
+   using only element + structural selectors
+   =========================================== */
+ul {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+/* 1st "here" link */
+a:nth-of-type(1) {
+  background-color: yellow;
+  color: black;
+}
+
+/* 2nd "here" link */
+a:nth-of-type(2) {
+  background-color: blueviolet;
+  color: white;
+}
+
+/* Ordered list: plain black by default (element selector),
+   2nd item blue, 3rd item red (structural pseudo-class selectors) */
+ol li {
+  color: black;
+}
+
+ol li:nth-child(2) {
+  color: blue;
+}
+
+ol li:nth-child(3) {
+  color: red;
+}

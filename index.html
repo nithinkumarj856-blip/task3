@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task: CSS Selectors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Step 4 & 5: 3 different heading tags, all with class="head" -->
+  <h1 class="head">This is a h1 heading with head as a class.</h1>
+
+  <!-- Step 6 & 7: 2nd heading also gets id="bglime" for a lime background,
+       and the word "head" inside it is wrapped so it can be targeted separately -->
+  <h2 class="head" id="bglime">This is a h2 heading with "<span>head</span>" as a class and "bglime" as an id.</h2>
+
+  <h4 class="head">This is a h4 heading with head as a class.</h4>
+
+  <!-- Step 8: 3 plain paragraphs, no id/class, styled only via the p element selector -->
+  <p>This is a p paragraph tag without any id or class styled using "p" element selector</p>
+
+  <!-- Step 9 & 10: 2nd paragraph gets id="para" (green text); the word "paragraph"
+       inside it is wrapped in a span so it can be overridden to black + larger font -->
+  <p id="para">This is a p <span>paragraph</span> tag with para as an id</p>
+
+  <p>This is a p paragraph tag without any id or class styled using "p" element selector</p>
+
+  <!-- Step 11: 2 lists. The "here" links get no id/class — styled purely via
+       element + structural (nth-of-type) selectors -->
+  <p><strong>Show this output without inline CSS nor using class or id for "a" tag.</strong></p>
+
+  <ul>
+    <li>Click <a href="https://www.upskillmafia.com" target="_blank" rel="noopener">here</a> to go to UpskillMafia</li>
+    <li>Click <a href="https://www.google.com" target="_blank" rel="noopener">here</a> to go to Google</li>
+  </ul>
+
+  <ol>
+    <li>This is li tag without any id or class</li>
+    <li>This is li tag without any id or class and it is in blue colour</li>
+    <li>This is li tag without any id or class and is in red colour</li>
+    <li>This is li tag without any id or class</li>
+    <li>This is li tag without any id or class</li>
+  </ol>
+
+</body>
+</html>
